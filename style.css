@@ -1,3 +1,105 @@
+:root{
+  --main-violet: hsl(257, 40%, 49%);
+  font-size:15px;
+}
+
+body{
+  background: var(--main-violet);
+}
+
+/*******header******/
+
+header{
+  position:relative;
+  background: var(--main-violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat:no-repeat;
+  height:60vh;
+}
+
+.mainLogo{
+  display:block;
+  width:9em;
+  position:absolute;
+  top:2.2em;
+  left:2em;
+}
+
+.mockups{
+  display:block;
+  width:80vw;
+  margin-left:auto;
+  margin-right:auto;
+  position:absolute;
+  top:58%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*******main******/
+
+main{
+  width:83vw;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+}
+
+main h1{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size:1.8em;
+  font-weight:700;
+  line-height:1.6;
+  margin-bottom:0.5em;
+}
+
+main h3{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.1em;
+  font-weight:400;
+  line-height:1.5;
+  margin-bottom:2em;
+}
+
+main button{
+  display:block;
+  border:none;
+  box-shadow:0px 10px 10px -5px rgba(0,0,0,0.5);
+  background-color: white;
+  border-radius:10em;
+  color: var(--main-violet);
+  font-family: 'Poppins', sans-serif;
+  position:relative;
+  margin-bottom:5em;
+  left:50%;
+  transform:translate(-50%,0);
+  width:14em;
+  height:3.5em;
+}
+
+/*******footer******/
+
+.icon-flex, .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5em 2.2em;
+}
+.icon-wrapper i {
+    color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
