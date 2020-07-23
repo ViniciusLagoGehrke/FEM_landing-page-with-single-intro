@@ -2,7 +2,7 @@
 
 ![Design for Desktop viewport](./desktopView.png)
 
-![Design for Mobile viewport](./mobilepView.png)
+![Design for Mobile viewport](./mobileView.png)
 
 # What I learned and practice in this exercise
 
