@@ -5,14 +5,15 @@
 
 body{
   background: var(--main-violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat:no-repeat;
+  background-size:100% auto;  
 }
 
 /*******header******/
 
 header{
   position:relative;
-  background-image: url(./images/bg-mobile.svg);
-  background-repeat:no-repeat;
   height:60vh;
 }
 
@@ -26,7 +27,7 @@ header{
 
 .mockups{
   display:block;
-  width:80vw;
+  width:300px;
   margin-left:auto;
   margin-right:auto;
   position:absolute;
@@ -111,8 +112,7 @@ main button:hover{
   body {
     display:flex;
     flex-flow:row nowrap;
-    background-image: url(./images/bg-desktop.svg);
-    background-repeat:no-repeat;
+    background-image: url(./images/bg-desktop.svg);  
     background-size:100% 100%;
     font-size:20px;
   }
@@ -120,7 +120,6 @@ main button:hover{
 /*******header******/
 
   header{
-    background-image: none;
     height:100vh;
     width:100%;
   }
@@ -156,10 +155,12 @@ main button:hover{
   }
 
   main button{
-    left:30%;
+    left:25%;
     transform:translate(-50%,0);
     position:absolute;    
     top:65%;
+    width:16vw;
+    height:5vw;
   }
 
 /*******footer******/
@@ -168,7 +169,7 @@ main button:hover{
     display:block;
     position:absolute;    
     top:90%;
-    right:0%;
+    right:2%;
   }
 
   .icon-flex,{
