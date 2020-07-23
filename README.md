@@ -2,6 +2,8 @@
 
 ![Design for Desktop viewport](./desktopView.png)
 
+![Design for Mobile viewport](./mobilepView.png)
+
 # What I learned and practice in this exercise
 
 * work with background-image and the whole setup
