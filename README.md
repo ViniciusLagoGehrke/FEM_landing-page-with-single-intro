@@ -1,6 +1,8 @@
-# Frontend Mentor - Huddle landing page with single introductory section
+# Landing Page with Single Intro
 
-![Design for Desktop viewport](./desktopView.png)
+Background-image setup, responsive layout with flexbox and a few hover effects on some buttons.
+
+![Design for Desktop viewport](desktop-preview.jpg)
 
 ![Design for Mobile viewport](./mobileView.png)
 
@@ -8,3 +10,7 @@
 
 * work with background-image and the whole setup
 * hover effect with scale and translate transform methods
+
+Please check the [live website](https://landing-page-with-single-intro.vercel.app/)
+
+[OnPortfolio](https://front-end-portfolio.vercel.app/)
