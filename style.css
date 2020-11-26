@@ -7,49 +7,47 @@ body{
   background: var(--main-violet);
   background-image: url(./images/bg-mobile.svg);
   background-repeat:no-repeat;
-  background-size:100% auto;  
+  background-size:100%;  
 }
 
 /*******header******/
 
 header{
-  position:relative;
-  height:60vh;
+  height:70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-bottom: 4rem;
 }
 
-.mainLogo{
-  display:block;
-  width:10em;
-  position:absolute;
-  top:2.2em;
-  left:2em;
+.logo{
+  width:8em;
+  margin-bottom: 2rem;
 }
 
 .mockups{
-  display:block;
-  width:300px;
-  margin-left:auto;
-  margin-right:auto;
-  position:absolute;
-  top:58%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  width:95%;
+  max-width: 450px;
+  margin:0 auto;
 }
 
 /*******main******/
 
 main{
-  width:83vw;
-  text-align: center;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
   margin-left:auto;
   margin-right:auto;
-  position:relative;
+  text-align: center;
+  padding: 2rem;
 }
 
 main h1{
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size:1.8em;
+  font-size:1.6em;
   font-weight:700;
   line-height:1.6;
   margin-bottom:0.5em;
@@ -66,42 +64,52 @@ main h3{
 
 main button{
   display:block;
+  margin-bottom:5em;
+  width:14em;
+  height:3.5em;
   border:none;
   box-shadow:0px 10px 10px -5px rgba(0,0,0,0.5);
   background-color: white;
   border-radius:10em;
   color: var(--main-violet);
   font-family: 'Poppins', sans-serif;
-  position:relative;
-  margin-bottom:5em;
-  left:50%;
-  transform:translate(-50%,0);
-  transition: 0.2s ease-in-out;
-  width:14em;
-  height:3.5em;
+  transition: 0.1s ease-in-out;
 }
 
 main button:hover{
-  transform:scale(1.1) translate(-45%, -5%);
+  transform:scale(1.02);
   box-shadow:0px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+main button:active{
+  transform:scale(1.0);
+  box-shadow:0px 10px 10px -5px rgba(0,0,0,0.5);
 }
 
 /*******footer******/
 
-.icon-flex, .icon-wrapper {
+.icon-group, .icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .icon-wrapper {
   border-radius: 50%;
-  overflow: hidden;
   border: 1px solid white;
   font-size: 1.3rem;
   width: 40px;
   height: 40px;
-  margin: 0 0.5em 2.2em;
+  margin: 0 0.5em;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
+
+.icon-wrapper:hover {
+  text-shadow: 0 0 2px white;
+  border: 2px solid white;
+}
+
 .icon-wrapper i {
   color: white;
 }
@@ -113,7 +121,7 @@ main button:hover{
     display:flex;
     flex-flow:row nowrap;
     background-image: url(./images/bg-desktop.svg);  
-    background-size:100% 100%;
+    background-size:auto 100%;
     font-size:20px;
   }
 
@@ -121,67 +129,54 @@ main button:hover{
 
   header{
     height:100vh;
-    width:100%;
+    flex-basis: 80%;
+    padding: 6rem;
+    margin-bottom: 0;
   }
 
-  .mainLogo{
-    top:4em;
-    left:4em;
+  .logo{
+    width: 12rem;
   }
 
   .mockups{
     width:56vw;
+    max-width: 750px; 
     top:56%;
     left:50%;
+    margin-bottom: 4rem;
   }
 
 /*******main******/
 
   main{
-    width:50%;
-    height:100vh;
+    min-width: 450px;
+    position: relative;
     text-align: left;
-    position:relative;
-  }
-
-  main h1{
-    position:absolute;    
-    top:32%;
-  }
-
-  main h3{
-    position:absolute;    
-    top:47%;
+    flex-basis: 50%;
+    justify-content: center;
   }
 
   main button{
-    left:25%;
-    transform:translate(-50%,0);
-    position:absolute;    
-    top:65%;
     width:16vw;
     height:5vw;
+    margin-right:auto;
+    margin-bottom:0;
   }
 
 /*******footer******/
 
   footer{
+    position: absolute;
+    bottom: 4rem;
     display:block;
-    position:absolute;    
-    top:90%;
-    right:2%;
-  }
-
-  .icon-flex,{
-    position:absolute;    
-    bottom:0;
+    align-self: flex-end;
   }
 
   .icon-wrapper {
     font-size: 1.3rem;
     width: 40px;
     height: 40px;
-    margin: 0 0.5em 1em;
+    margin: 0 0.5em;
   }
 
 }
