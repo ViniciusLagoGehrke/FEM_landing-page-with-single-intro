@@ -12,5 +12,3 @@ Background-image setup, responsive layout with flexbox and a few hover effects o
 * hover effect with scale and translate transform methods
 
 Please check the [live website](https://landing-page-with-single-intro.vercel.app/)
-
-[OnPortfolio](https://front-end-portfolio.vercel.app/)
